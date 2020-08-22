@@ -1,0 +1,17 @@
+@import "../../../assets/scss/global";
+.main-footer {
+  background: var(--background-brown);
+  border-bottom: 5px  solid $color-brown-ligth;
+  .copyrights_footer{
+   &--title {
+    color: $color-white;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    }
+  }
+}
+
+
+

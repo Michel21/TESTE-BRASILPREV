@@ -1,0 +1,18 @@
+@import './_colors';
+@import './_texto_patterns';
+
+.mat-snack-bar-container{
+  background: $primary-color;
+  @include text-d1;
+}
+
+simple-snack-bar span{
+  color: $nutral-lighter-color;
+}
+.mat-simple-snackbar-action button{
+  max-height: initial;
+}
+
+.mat-button-wrapper{
+  @include text-s2;
+}

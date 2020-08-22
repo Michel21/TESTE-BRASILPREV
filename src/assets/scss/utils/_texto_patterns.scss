@@ -1,0 +1,228 @@
+@mixin text-t1 {
+  font-size: 45px;
+  line-height: 55px;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  font-weight: 800;
+}
+@mixin text-t2 {
+  font-size: 30px;
+  line-height: 40px;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  font-weight: 500;
+}
+@mixin text-t3 {
+  font-size: 24px;
+  line-height: 55px;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  font-weight: 500;
+}
+@mixin text-t4 {
+  font-size: 19px;
+  line-height: 26px;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  font-weight: 500;
+}
+@mixin text-t5 {
+  font-size: 11px;
+  line-height: 21px;
+  letter-spacing: normal;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  font-weight: 600;
+}
+@mixin text-p1 {
+  font-size: 19px;
+  line-height: 26px;
+  font-family: 'myriad-pro', Times, serif;
+  text-transform: initial;
+  font-weight: 400;
+  i {
+    font-family: 'myriad-pro', Times, serif;
+    font-style: italic;
+  }
+}
+
+@mixin text-p2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: 'myriad-pro', Times, serif;
+  text-transform: initial;
+  font-weight: 400;
+  i {
+    font-family: 'myriad-pro', Times, serif;
+    font-style: italic;
+  }
+}
+
+@mixin text-d1 {
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  font-family: 'myriad-pro', Times, serif;
+  text-transform: initial;
+  font-weight: 700;
+}
+@mixin text-pd1 {
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: normal;
+  font-family: 'myriad-pro', Times, serif;
+  text-transform: initial;
+  font-weight: 400;
+  i {
+    font-family: 'myriad-pro', Times, serif;
+    font-style: italic;
+  }
+}
+@mixin text-s1 {
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  font-family: 'myriad-pro', Times, serif;
+  text-transform: initial;
+  font-weight: 500;
+}
+@mixin text-s2 {
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: normal;
+  font-family: 'myriad-pro', Times, serif;
+  text-transform: initial;
+  font-weight: 500;
+}
+@mixin text-n1 {
+  font-size: 129px;
+  line-height: 129px;
+  letter-spacing: -4px;
+  font-family: 'garamond-fb-display', Times, serif;
+  text-transform: initial;
+  font-weight: 600;
+}
+@mixin text-n2 {
+  font-size: 98px;
+  line-height: 98px;
+  letter-spacing: -3px;
+  font-family: 'garamond-fb-display', Times, serif;
+  text-transform: initial;
+  font-weight: 600;
+}
+@mixin text-f1 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  text-transform: initial;
+  font-weight: 500;
+}
+@mixin text-f2 {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  font-family: 'myriad-pro', Helvetica, sans-serif;
+  text-transform: initial;
+  font-weight: 500;
+}
+.text-t1{
+  @include text-t2;
+  @include responsive-media($for-tablet-landscape-up){
+    @include text-t1;
+  }
+}
+
+.text-t2{
+  @include text-t3;
+  @include responsive-media($for-tablet-landscape-up){
+    @include text-t2;
+  }
+}
+
+.text-t3{
+  @include text-t4;
+  @include responsive-media($for-tablet-landscape-up){
+    @include text-t3;
+  }
+}
+.text-t4{
+  @include text-t5;
+  @include responsive-media($for-tablet-landscape-up){
+    @include text-t4;
+  }
+}
+.text-t5{
+  @include text-t5;
+}
+
+.text-p1{
+  @include text-p2;
+  @include responsive-media($for-tablet-landscape-up){
+    @include text-p1;
+  }
+}
+.text-p2{
+  @include text-p2;
+}
+.text-d1{
+  @include text-d1;
+}
+.text-pd1{
+  @include text-pd1;
+  font-size: 17px;
+  line-height: 24px;
+  @include responsive-media($for-tablet-landscape-up){
+    @include text-pd1;
+  }
+}
+.text-s1{
+  @include text-s1;
+}
+.text-s2{
+  @include text-s2;
+}
+
+.text-n1{
+  @include text-n2;
+  @include responsive-media($for-tablet-landscape-up){
+    @include text-n1;
+  }
+}
+
+.text-n2{
+  @include text-n2;
+  font-size: 74px;
+  line-height: 79px;
+  letter-spacing: -1px;
+
+  @include responsive-media($for-tablet-landscape-up){
+    @include text-n2;
+  }
+}
+.text-f1{
+  @include text-f1;
+}
+.text-f2{
+  @include text-f2;
+}
+
+h1{
+  @extend .text-t2;
+}
+h2{
+  @extend .text-t2;
+}
+h3{
+  @extend .text-t3;
+}
+h4{
+  @extend .text-t4;
+}
+h5{
+  @extend .text-t5;
+}
+p{
+  @extend .text-t2;
+}
+strong{
+  @extend .text-d1;
+}
+small{
+  @extend .text-d1;
+}

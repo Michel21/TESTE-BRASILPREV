@@ -1,0 +1,129 @@
+@import "../../../../assets/scss/global";
+/*pokemon*/
+.pokemon-detalhe{
+  color:#fff;
+  background:#FFFFFF ;
+  padding: 50px 0;
+  &_box{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 15px;
+    justify-content: start;
+    &__thamb{
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+    }
+    .description{
+      width: 100%;
+      h2{
+        font-size: 14px;
+        color: #fff;
+        line-height: 24px;
+        padding-left: 8px;
+        width: 100%;
+        background: #3D3D4D;
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 14px !important;
+        text-align: left;
+        color: #3D3D4D !important;
+        width: 100%;
+        line-height: 17px;
+        margin-bottom: 19px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #cccc;
+      }
+    }
+
+  }
+  &_siteHeader{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+    position: relative;
+    span{
+      text-align: center;
+      font-size: 2.8em;
+      font-weight: 600;
+      color: #009345;
+      padding: 0 10px;
+      top: 0;
+      width: 100%;
+      position: relative;
+      border: 2px solid;
+      opacity: 0.3;
+      text-shadow: 1px 1px 2px #0a382b;
+    }
+
+  }
+  &_thumb{
+    text-align: center;
+    background-color: #ffb94d;
+    padding: 0px 30px;
+    padding-top: 10px;
+    line-height: 10px;
+  }
+  .search-bar{
+    margin: 10px 0;
+  }
+  .input-search{
+    padding: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  .not-found-empty{
+    color: var(--color-default);
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0;
+    min-height: 56vh;
+  }
+}
+//screen and (min-width:320px)
+@include responsive-media($smartphones-portrait){
+  .pokemon-detalhe{
+    &_box{
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+    }
+    &_siteHeader{
+      span{
+      font-size: 2rem;
+      }
+    }
+  }
+}
+//screen and (min-width:480px)
+@include responsive-media($smartphones-landscape){
+  .pokemon-detalhe{
+    &_box{
+      grid-template-columns: 1fr;
+      grid-gap: 15px;
+    }
+  }
+
+}
+//screen and (min-width:600px)
+
+//screen and (min-width:801px)
+@include responsive-media($tablets-landscape){
+  .pokemon-detalhe{
+    &_box{
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 15px;
+    }
+  }
+}
+//screen and (min-width:1025px)
+
+
+//screen and (min-width:1281px)
+
+
+
+
+

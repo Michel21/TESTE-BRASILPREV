@@ -1,0 +1,51 @@
+<app-loader *ngIf="loader"></app-loader>
+<section class="pokemon-detalhe">
+  <div class="grid">
+    <div class="cell-4-phone cell-8-tablet cell-12-desktop">
+      <header class="pokemon-detalhe_siteHeader">
+        <span> Detalhes da carta de Pokemon</span>
+      </header>
+      <div class="pokemon-detalhe_box" *ngIf="listPokemon; else empty">
+        <div class="pokemon-detalhe_box__thamb">
+          <img class="listPokemons_logo" [src]="listPokemon?.imageUrlHiRes" alt="{{listPokemon?.name}}"
+            title="{{listPokemon?.name}}">
+        </div>
+        <div class="description">
+          <h2><b>Nome:</b> {{listPokemon?.name}} </h2>
+          <p><b>ID:</b> {{listPokemon?.id}}</p>
+          <p><b>Tipo:</b> {{listPokemon?.types}}</p>
+          <div>
+            <h2>Lista de ataques com:[a]</h2>
+            <div *ngFor="let att of attacks; let a = index">
+              <p><b>Energia:</b> {{att.convertedEnergyCost}}</p>
+              <p><b>Custo:</b> {{att.cost[a]}}</p>
+              <p><b>Nome:</b> {{att.name}}</p>
+              <p><b>Dano:</b> {{att.damage}}</p>
+              <p><b>Descrição:</b> {{att.text}}</p>
+            </div>
+          </div>
+          <div>
+            <h2>Resistencia(s):</h2>
+            <div *ngFor="let res of resistances">
+              <p><b>Tipo:</b> {{res?.type}}</p>
+              <p><b>Valor:</b> {{res?.value}}</p>
+            </div>
+          </div>
+          <div>
+            <h2>Fraqueza(s):</h2>
+            <div *ngFor="let weak of weaknesses">
+              <p><b>Nome:</b> {{weak?.type}}</p>
+              <p><b>Dano:</b> {{weak?.value}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ng-template #empty>
+        <div class="not-found-empty">
+          <p>Nenhum dado econtrado!</p>
+        </div>
+      </ng-template>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>

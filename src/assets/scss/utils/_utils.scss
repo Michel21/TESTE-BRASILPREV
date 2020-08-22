@@ -1,0 +1,86 @@
+@mixin display-flex {
+  display: flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flexbox;
+  display: -webkit-box;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+@mixin flex-flow($flow) {
+  -webkit-flex-flow: $flow;
+  -moz-flex-flow: $flow;
+  -ms-flex-flow: $flow;
+  flex-flow: $flow;
+}
+@mixin  order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+@mixin flex-grow($grow) {
+  -webkit-flex-grow: $grow;
+  -moz-flex-grow: $grow;
+  -ms-flex-grow:$grow;
+  flex-grow: $grow;
+}
+
+@mixin flex-shrink($shrink){
+  -webkit-flex-shrink: $shrink;
+  -moz-flex-shrink: $shrink;
+  -ms-flex-shrink:$shrink;
+  flex-shrink: $shrink;
+}
+ @mixin flex-basis($with) {
+  -webkit-flex-flex-basis: $with;
+  -moz-flex-flex-basis: $with;
+  -ms-flex-flex-basis:$with;
+  flex-basis: $with;
+ }
+ @mixin justify-content($justify) {
+  -webkit-flex-justify-content: $justify;
+  -moz-flex-justify-content: $justify;
+  -ms-flex-justify-content:$justify;
+  justify-content: $justify;
+  -ms-flex-pack: $justify;
+ }
+ @mixin align-content($align) {
+  -webkit-flex-align-content: $align;
+  -moz-flex-align-content: $align;
+  -ms-flex-align-content:$align;
+  align-content: $align;
+ }
+ @mixin align-items($align) {
+  -webkit-flex-align-items: $align;
+  -moz-flex-align-items: $align;
+  -ms-flex-align-items:$align;
+  align-items: $align;
+ }
+ @mixin align-self($align) {
+  -webkit-flex-align-self: $align;
+  -moz-flex-align-self: $align;
+  -ms-flex-align-self:$align;
+  align-self: $align;
+ }

@@ -6,6 +6,6 @@ export class AppPage {
   }
 
   getTitleText() {
-    return element(by.css('app-root h1')).getText() as Promise<string>;
+    return element(by.xpath("/html/body/app-root/app-pokemon/section/div/div[1]/header/span")).getText() as Promise<string>;
   }
 }

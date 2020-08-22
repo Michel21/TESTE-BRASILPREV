@@ -1,0 +1,50 @@
+<app-loader *ngIf="loader"></app-loader>
+<section class="pokemon">
+  <div class="grid">
+    <div class="cell-4-phone cell-8-tablet cell-12-desktop">
+      <header class="pokemon_siteHeader">
+        <span>Pokémon TCG Developers</span>
+      </header>
+
+      <div class="search-bar">
+        <a  class="search-link">
+          <span *ngIf="iptSearch.value">
+            <small style="margin-right: 10px;">"Resultados: {{listPokemons.length}} - {{ iptSearch.value }} "
+            </small>
+          </span><i class="fa fa-search"></i>
+        </a>
+        <form [formGroup]="searchForm">
+          <div class="form-group">
+            <input type="text" #iptSearch formControlName="searchControl" class="input-search"
+              placeholder="Search by name">
+          </div>
+        </form>
+      </div>
+
+      <div class="pokemon-minimalist">
+        <img src="../../../assets/pokemon-minimalist.png" alt="pokemon" />
+      </div>
+
+      <article class="pokemon_box" *ngIf="listPokemons.length > 0;else empty">
+        <ng-container *ngFor="let pok of listPokemons; let i = index">
+          <div class="pokemon_box__content">
+            <a class="pokemon_thumb" title="{{pok?.name}}" [routerLink]="['/cards', pok?.id]">
+              <img class="wc-poks_logo" [src]="pok?.imageUrl" alt="{{pok?.name}}" title="{{pok?.name}}">
+            </a>
+            <div class="description">
+              <h2><b>Nome:</b> {{pok?.name}}</h2>
+              <p><b>ID:</b> {{pok?.id}}</p>
+              <p><b>Tipo:</b> {{pok['types']}}</p>
+            </div>
+          </div>
+        </ng-container>
+      </article>
+      <ng-template #empty>
+        <div class="not-found-empty">
+          <p>Nenhum dado econtrado!</p>
+        </div>
+      </ng-template>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>

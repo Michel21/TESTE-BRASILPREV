@@ -8,9 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('deve exibir uma mensagem na pagina inicial', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to brasilprev!');
+    expect(page.getTitleText()).toEqual('Pokémon TCG Developers');
   });
 
   afterEach(async () => {
