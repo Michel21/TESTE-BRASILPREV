@@ -1,27 +1,56 @@
-# Brasilprev
+<h1>Qual objetivo?</h1>
+• Implementar um web app que consuma a <b>API Pokemon TCG</b> utilizando Angular. <br>
+• A aplicação deve possuir 2 páginas:
+# NodeJS-API
+<h2>Pasta do projeto</h2>
+<p>Navegue atè a pasta brasilprev.</p>
+Excute no terminal: <b>cd brasilprev</b> <br>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+<h2>instalar todas as dependências</h2>
 
-## Development server
+yarn 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<h2>Iniciar a aplicação</h2>
 
-## Code scaffolding
+yarn start
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h2>Aplicar testes</h2>
 
-## Build
+yarn test<br>
+yarn e2e
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<h2>Página com lista somente das cartas Pokemon:</h2>
 
-## Running unit tests
+[x] Imagem da carta <br>
+[x] Nome do Pokemon  <br>
+[x] ID do Pokemon <br>
+[x] Tipo(s)<br>
+<h2>Páginas de detalhes da carta de Pokemon:</h2>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[x] Imagem em alta definição <br>
+[x] Nome <br>
+[x] ID do Pokemon <br>
+[x] Tipo(s) <br>
 
-## Running end-to-end tests
+<h3>Lista de ataques com:</h3>
+[x] Custo de “mana” <br>
+[x] Nome <br>
+[x] Dano <br>
+[x] Descrição<br><br>
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+[x]<b>Resistencia(s)</b><br>
+[x]<b>Fraqueza(s)</b>
 
-## Further help
+<h2>Requisitos específicos</h2>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+[x] A aplicação deverá ser responsiva, mobile-first<br>
+[x] A aplicação deverá utilizar a funcionalidade de rotas<br>
+[x] A lista de cartas deverá estar ordenada por nome<br>
+[x] A aplicação deve conter a funcionalidade de busca por nome<br>
+
+<h2>Extras</h2>
+
+[x] Conter testes E2E<br>
+[x] Conter testes unitários<br>
+[x] Utilizar SASS(variáveis, mixins, etc)<br>
+[x] Utilizar programação funcional<br>
