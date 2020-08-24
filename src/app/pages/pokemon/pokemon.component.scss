@@ -15,6 +15,17 @@
       background: #F0F0F5;
       border-radius: 8px;
       overflow: hidden;
+
+
+      transform: perspective(1px) translateZ(0);
+      transition-duration: 0.3s;
+      transition-property: transform;
+        &:hover,
+        &:focus,
+        &:active{
+          transform: scale(1.05);
+        }
+
       .description{
         width: 100%;
 

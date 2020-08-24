@@ -1,7 +1,6 @@
 <h1>Qual objetivo?</h1>
 • Implementar um web app que consuma a <b>API Pokemon TCG</b> utilizando Angular. <br>
-• A aplicação deve possuir 2 páginas:
-# NodeJS-API
+
 <h2>Pasta do projeto</h2>
 <p>Navegue atè a pasta brasilprev.</p>
 Excute no terminal: <b>cd brasilprev</b> <br>

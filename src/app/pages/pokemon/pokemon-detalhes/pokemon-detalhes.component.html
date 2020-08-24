@@ -17,21 +17,21 @@
         <div class="description">
           <h2><b>Nome:</b> {{listPokemon?.name}} </h2>
           <p><b>ID:</b> {{listPokemon?.id}}</p>
-          <p><b>Tipo:</b> {{listPokemon?.types}}</p>
+          <p><b>Tipo:</b> {{(listPokemon?.types ? listPokemon?.types : 'N/A')}}</p>
           <div>
-            <h2>Lista de ataques com:[a]</h2>
+            <h2>Lista de ataques com:</h2>
             <div *ngFor="let att of attacks; let a = index">
               <p><b>Energia:</b> {{att.convertedEnergyCost}}</p>
               <p><b>Custo:</b> {{att.cost[a]}}</p>
               <p><b>Nome:</b> {{att.name}}</p>
               <p><b>Dano:</b> {{att.damage}}</p>
-              <p><b>Descrição:</b> {{att.text}}</p>
+              <p><b>Descrição:</b> {{att.text ? att.text : 'N/A'}}</p>
             </div>
           </div>
           <div>
             <h2>Resistencia(s):</h2>
             <div *ngFor="let res of resistances">
-              <p><b>Tipo:</b> {{res?.type}}</p>
+              <p><b>Tipo:</b> {{(res?.type ? res?.type : 'N/A')}}</p>
               <p><b>Valor:</b> {{res?.value}}</p>
             </div>
           </div>
