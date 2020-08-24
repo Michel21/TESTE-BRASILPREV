@@ -29,12 +29,12 @@
         <ng-container *ngFor="let pok of listPokemons; let i = index">
           <div class="pokemon_box__content">
             <a class="pokemon_thumb" title="{{pok?.name}}" [routerLink]="['/cards', pok?.id]">
-              <img class="wc-poks_logo" [src]="pok?.imageUrl" alt="{{pok?.name}}" title="{{pok?.name}}">
+              <img class="wc-poks_logo" appLazyLoad [src]="pok?.imageUrl" alt="{{pok?.name}}" title="{{pok?.name}}">
             </a>
             <div class="description">
               <h2><b>Nome:</b> {{pok?.name}}</h2>
               <p><b>ID:</b> {{pok?.id}}</p>
-              <p><b>Tipo:</b> {{pok['types']}}</p>
+              <p><b>Tipo:</b> {{(pok['types'] ? pok['types'] : "N/A")}}</p>
             </div>
           </div>
         </ng-container>

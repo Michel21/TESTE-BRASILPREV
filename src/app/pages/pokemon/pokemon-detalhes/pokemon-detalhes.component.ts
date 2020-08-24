@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../pokemon.service';
 import { Pokemon, PokemonDamager, ResistanceAndWeaknesse } from 'src/app/shared/model/pokemon';
 import { ActivatedRoute } from '@angular/router';
-
+import { _PATH } from "../../../shared/constants/constants";
 @Component({
   selector: 'app-pokemon-detalhes',
   templateUrl: './pokemon-detalhes.component.html',
@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class PokemonDetalhesComponent implements OnInit {
   loader;
+  path = `${_PATH}/load.gif`
   listPokemon: Pokemon;
   attacks: PokemonDamager[] = [];
   resistances: ResistanceAndWeaknesse[] = [];
@@ -32,5 +33,8 @@ export class PokemonDetalhesComponent implements OnInit {
     this.pokemonSrv.ListPokemonId(this.route.snapshot.params['id'])
       .subscribe(listener)
     this.loader = this.pokemonSrv.isLoadingError()
+  }
+  doSomethingOnError(event: any) {
+    event.target.src = this.path;
   }
 }

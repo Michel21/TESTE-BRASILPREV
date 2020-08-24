@@ -7,8 +7,12 @@
       </header>
       <div class="pokemon-detalhe_box" *ngIf="listPokemon; else empty">
         <div class="pokemon-detalhe_box__thamb">
-          <img class="listPokemons_logo" [src]="listPokemon?.imageUrlHiRes" alt="{{listPokemon?.name}}"
-            title="{{listPokemon?.name}}">
+          <img class="listPokemons_logo"
+          appLazyLoad
+          (error)="doSomethingOnError($event)"
+          [src]="listPokemon?.imageUrlHiRes"
+          alt="{{listPokemon?.name}}"
+          title="{{listPokemon?.name}}">
         </div>
         <div class="description">
           <h2><b>Nome:</b> {{listPokemon?.name}} </h2>
