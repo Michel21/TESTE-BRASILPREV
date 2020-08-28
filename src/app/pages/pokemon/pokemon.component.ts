@@ -4,6 +4,7 @@ import { Pokemon } from 'src/app/shared/model/pokemon';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { debounceTime, distinctUntilChanged, switchMap, catchError } from 'rxjs/operators';
 import { from } from 'rxjs';
+import { _PATH } from 'src/app/shared/constants/constants';
 
 @Component({
   selector: 'app-pokemon',
@@ -17,6 +18,7 @@ export class PokemonComponent implements OnInit {
   searchForm: FormGroup;
   searchControl: FormControl;
   loader;
+  path = `${_PATH}/load.gif`
 
   constructor(
     private pokemonSrv: PokemonService,
