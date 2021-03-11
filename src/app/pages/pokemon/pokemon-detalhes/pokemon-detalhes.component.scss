@@ -32,7 +32,7 @@
         line-height: 17px;
         margin-bottom: 19px;
         padding-bottom: 5px;
-        border-bottom: 1px solid #cccc;
+        border-bottom: 1px solid #6b6b6b63;
       }
     }
 
@@ -112,7 +112,7 @@
 @include responsive-media($tablets-landscape){
   .pokemon-detalhe{
     &_box{
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 15px;
     }
   }
