@@ -23,9 +23,9 @@ yarn test<br>
 [x] Nome do Pokemon  <br>
 [x] ID do Pokemon <br>
 [x] Tipo(s)<br>
-<h2>Páginas de detalhes da carta de Pokemon:</h2>
+<h2>Página de detalhe da carta do Pokemon:</h2>
 
-[x] Imagem em alta definição <br>
+[x] Imagem do Pokemon selecionado em alta definição <br>
 [x] Nome <br>
 [x] ID do Pokemon <br>
 [x] Tipo(s) <br>
