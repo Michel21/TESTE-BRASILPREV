@@ -20,7 +20,6 @@
         font-size: 14px;
         color: #fff;
         line-height: 24px;
-        padding-left: 8px;
         width: 100%;
         background: var(--background-brown-ligth);
         margin-bottom: 15px;
@@ -28,7 +27,7 @@
       p{
         font-size: 14px !important;
         text-align: left;
-        color: var(--color-with) !important;
+        color: var(--color-beige-ligth) !important;
         width: 100%;
         line-height: 17px;
         margin-bottom: 19px;
@@ -49,12 +48,12 @@
       text-align: center;
       font-size: 2.8em;
       font-weight: 600;
-      color: var(--color-green-ligth);
+      color: var(--color-beige-ligth);
+      opacity: 0.9;
       padding: 0 10px;
       top: 0;
       width: 100%;
       position: relative;
-      border: 2px solid;
       text-shadow: 1px 1px 2px #0a382b;
     }
 
@@ -75,7 +74,8 @@
     width: 100%;
   }
   .not-found-empty{
-    color: var(--color-default);
+    color: var(--color-beige-ligth);
+    opacity: 0.9;
     text-align: center;
     font-size: 24px;
     margin: 40px 0;

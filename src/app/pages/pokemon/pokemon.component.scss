@@ -65,8 +65,7 @@
       top: 0;
       width: 100%;
       position: relative;
-      border: 2px solid;
-      opacity: 0.3;
+      opacity: 0.9;
       text-shadow: 1px 1px 2px #0a382b;
     }
   }
@@ -89,7 +88,7 @@
     border: 1px solid;
     border-color: $lightes-dark;
     color: $color-black-lightes;
-    border-radius: 6px;
+    border-radius: 30px;
     box-shadow: inset 0 1px 2px rgba(10,10,10,.1);
     max-width: 100%;
     width: 100%;
