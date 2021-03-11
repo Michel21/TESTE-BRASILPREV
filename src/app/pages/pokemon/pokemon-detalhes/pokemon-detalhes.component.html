@@ -3,7 +3,7 @@
   <div class="grid">
     <div class="cell-4-phone cell-8-tablet cell-12-desktop">
       <header class="pokemon-detalhe_siteHeader">
-        <span> Detalhes da carta do Pokemon</span>
+        <span *ngIf="!loader"> Detalhes da carta do Pokemon</span>
       </header>
       <div class="pokemon-detalhe_box" *ngIf="listPokemon; else empty">
         <div class="pokemon-detalhe_box__thamb">
@@ -45,7 +45,7 @@
         </div>
       </div>
       <ng-template #empty>
-        <div class="not-found-empty">
+        <div class="not-found-empty" *ngIf="!loader">
           <p>Nenhum dado econtrado!</p>
         </div>
       </ng-template>
