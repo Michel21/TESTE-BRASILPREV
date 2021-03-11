@@ -1,9 +1,9 @@
-<h1>projeto web Pokemon TCG</h1>
+<h1>Projeto web Pokemon TCG</h1>
 • O projeto consome a <b>API Pokemon TCG</b> utilizando Angular 2. V 8.1.2 <br>
 
 <h2>Pasta do projeto</h2>
 <p>Navegue atè a pasta brasilprev.</p>
-Excute no terminal: <b>cd brasilprev</b> <br>
+Execute no terminal: <b>cd brasilprev</b> <br>
 
 <h2>instalar todas as dependências</h2>
 
@@ -16,7 +16,6 @@ yarn start
 <h2>Aplicar testes</h2>
 
 yarn test<br>
-yarn e2e
 
 <h2>Página com lista somente das cartas Pokemon:</h2>
 
