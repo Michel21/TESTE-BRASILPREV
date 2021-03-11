@@ -43,7 +43,7 @@ yarn test<br>
 
 [x] Aplicação é responsiva com o conceito, mobile-first<br>
 [x] A aplicação possue sistema de rotas atendendo boas praticas, como carregamento sobre demanda atendendo o concetio de lazy-load onde a pagina só é carregado quando solicitada, deixando a aplicação performatica.<br>
-[x] A aplicação possue ordenada por nome.<br>
+[x] A aplicação possue ordenação por nome.<br>
 [x] A aplicação possue busca por nome avançada, devido o controle de digitação, a regra de negócio implementada só permite a consulta no banco, quando o usuário parar de digitar com intervalo de 1 segundo para que a cosulta seja concluida dando performance e não permitindo multiplas chamadas no banco. <br>
 [x] A aplicação possue modulos independentes desacoplando o modulo principal e possibilitando escalar o projeto<br>
 [x] As imagens do projeto são carregado sobre demanda utlizando o conceito lazy-load<br>
