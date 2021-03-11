@@ -20,12 +20,12 @@
           <p><b>Tipo:</b> {{(listPokemon?.types ? listPokemon?.types : 'N/A')}}</p>
           <div>
             <h2>Lista de ataques com:</h2>
-            <div *ngFor="let att of attacks; let a = index">
-              <p><b>Energia:</b> {{att.convertedEnergyCost}}</p>
-              <p><b>Custo:</b> {{att.cost[a]}}</p>
-              <p><b>Nome:</b> {{att.name}}</p>
-              <p><b>Dano:</b> {{att.damage}}</p>
-              <p><b>Descrição:</b> {{att.text ? att.text : 'N/A'}}</p>
+            <div *ngFor="let attack of attacks; let a = index">
+              <p><b>Energia:</b> {{attack.convertedEnergyCost}}</p>
+              <p><b>Custo:</b> {{attack.cost[a]}}</p>
+              <p><b>Nome:</b> {{attack.name}}</p>
+              <p><b>Dano:</b> {{attack.damage}}</p>
+              <p><b>Descrição:</b> {{attack.text ? attack.text : 'N/A'}}</p>
             </div>
           </div>
           <div>

@@ -28,7 +28,7 @@
       <article class="pokemon_box" *ngIf="listPokemons.length > 0;else empty">
         <ng-container *ngFor="let pok of listPokemons; let i = index">
           <div class="pokemon_box__content hvr-grow">
-            <a class="pokemon_thumb hvr-grow" title="{{pok?.name}}" [routerLink]="['/cards', pok?.id]">
+            <a class="pokemon_thumb hvr-grow" title="{{pok?.name}}" (click)="navigate(pok?.id)">
               <img class="wc-poks_logo" appLazyLoad [src]="pok?.imageUrl" alt="{{pok?.name}}" title="{{pok?.name}}">
             </a>
             <div class="description">

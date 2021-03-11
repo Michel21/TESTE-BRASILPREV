@@ -4,12 +4,12 @@ export interface Pokemon {
   nationalPokedexNumber: number;
   imageUrl: string
   imageUrlHiRes: string;
-  types: [];
+  types?: [];
   supertype: string;
   subtype: string;
   evolvesFrom: string;
   hp: number;
-  retreatCost: [],
+  retreatCost?: [],
   number: number;
   artist: string,
   rarity: string,

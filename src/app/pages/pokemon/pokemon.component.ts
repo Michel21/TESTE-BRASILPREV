@@ -5,6 +5,7 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { debounceTime, distinctUntilChanged, switchMap, catchError } from 'rxjs/operators';
 import { from } from 'rxjs';
 import { _PATH } from 'src/app/shared/constants/constants';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pokemon',
@@ -22,7 +23,8 @@ export class PokemonComponent implements OnInit {
 
   constructor(
     private pokemonSrv: PokemonService,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -71,5 +73,7 @@ export class PokemonComponent implements OnInit {
         err => this.loader = false,
       );
   }
-
+  navigate(id: string){
+    this.router.navigate([`cards/${id}`]);
+  }
 }
