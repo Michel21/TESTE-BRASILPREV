@@ -6,16 +6,16 @@
   padding: 50px 0;
   position: relative;
   &_btnBack{
-    background: #ff9000;
+    background: transparent;
     border-radius: 6px;
-    border: none;
+    border: 1px solid #ff9000;;
     padding: 10px 16px;
     outline: none;
     position: absolute;
     right: 50px;
     top: 10px;
     cursor: pointer;
-    color: #312e38;
+    color: #fff;
     font-weight: bold;
     width: 120px;
     margin-top: 16px;
