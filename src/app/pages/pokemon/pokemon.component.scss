@@ -93,12 +93,13 @@
     max-width: 100%;
     width: 100%;
   }
+  .loading,
   .not-found-empty{
-    color: var(--color-default);
+    color: var(--color-beige-ligth);
     text-align: center;
     font-size: 24px;
     margin: 40px 0;
-    min-height: 48vh;
+    // min-height: 48vh;
   }
   .pokemon-minimalist{
     margin-top: -30px;

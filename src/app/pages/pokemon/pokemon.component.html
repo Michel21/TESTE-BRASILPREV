@@ -41,7 +41,10 @@
       </article>
       <ng-template #empty>
         <div class="not-found-empty">
-          <p>Nenhum dado econtrado!</p>
+          <p *ngIf="!loader">Nenhum dado econtrado!</p>
+        </div>
+        <div class="loading" >
+          <p *ngIf="loader">Aguarde...</p>
         </div>
       </ng-template>
     </div>
