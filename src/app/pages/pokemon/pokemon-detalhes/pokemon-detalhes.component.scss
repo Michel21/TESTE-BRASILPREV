@@ -73,14 +73,16 @@
     border: 1px solid #ccc;
     width: 100%;
   }
+  .loading,
   .not-found-empty{
     color: var(--color-beige-ligth);
     opacity: 0.9;
     text-align: center;
     font-size: 24px;
-    margin: 40px 0;
+    margin: auto;
     min-height: 56vh;
   }
+  
 }
 //screen and (min-width:320px)
 @include responsive-media($smartphones-portrait){

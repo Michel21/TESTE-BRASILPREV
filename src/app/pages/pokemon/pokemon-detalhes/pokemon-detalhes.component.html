@@ -48,6 +48,9 @@
         <div class="not-found-empty" *ngIf="!loader">
           <p>Nenhum dado econtrado!</p>
         </div>
+        <div class="loading" *ngIf="loader">
+          <p>Aguarde...</p>
+        </div>
       </ng-template>
     </div>
     <div class="clear"></div>
