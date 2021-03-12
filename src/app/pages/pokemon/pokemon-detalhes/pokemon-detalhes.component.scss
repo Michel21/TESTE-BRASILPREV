@@ -4,6 +4,29 @@
   color:#fff;
   background: var(--background-brown); ;
   padding: 50px 0;
+  position: relative;
+  &_btnBack{
+    background: #ff9000;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 16px;
+    outline: none;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    cursor: pointer;
+    color: #312e38;
+    font-weight: bold;
+    width: 120px;
+    margin-top: 16px;
+    font-size: 20px;
+    transition: background-color 0.2s;
+    
+    &:hover{
+     opacity: 0.8;
+     background: #ff9000;
+   }
+  }
   &_box{
     display: grid;
     grid-template-columns: 2fr 1fr;
