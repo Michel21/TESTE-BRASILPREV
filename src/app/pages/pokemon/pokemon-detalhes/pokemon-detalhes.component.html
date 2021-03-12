@@ -1,6 +1,6 @@
 <app-loader *ngIf="loader"></app-loader>
 <section class="pokemon-detalhe">
-  <button class="pokemon-detalhe_btnBack" [routerLink]="['/']">
+  <button class="pokemon-detalhe_btnBack" [routerLink]="['/']" *ngIf="!loader">
     voltar
   </button>
   <div class="grid">
